@@ -42,3 +42,35 @@ body {
 .language-selector__item.selected {
   @apply .border .border-orange-500 .rounded-full .text-orange-500;
 }
+
+/* Grid 4 */
+
+.grid-4 {
+  display: grid;
+  grid-template-columns: 1fr;
+  column-gap: .75rem;
+  row-gap: 1.5rem;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 640px) {
+  .grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Inputs */
+
+.input {
+  @apply .tracking-wide .py-2 .border-2 .text-gray-500 .rounded .pl-3;
+}
+
+.input:focus {
+  @apply .border-orange-400 .text-gray-900;
+}
+
+/* Buttons */
+
+.btn-orange-filled {
+  @apply .uppercase .font-bold .text-white .tracking-wide .py-2 .px-24 .bg-orange-400 .rounded;
+}
