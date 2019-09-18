@@ -44,7 +44,7 @@ body {
 }
 
 .language-selector__dark > .language-selector__item {
-  @apply .text-primary-900 .p-2;
+  @apply .text-primary-900;
 }
 
 .language-selector__item.selected {
@@ -67,13 +67,23 @@ body {
   }
 }
 
-/* Inputs */
+/* Form elements */
 
 .input {
   @apply .tracking-wide .py-2 .border-2 .text-gray-300 .rounded .pl-3;
 }
 
 .input:focus {
+  outline: none;
+
+  @apply .border-secondary-900 .text-primary-900;
+}
+
+.textarea {
+  @apply .tracking-wide .py-2 .border-2 .text-gray-300 .rounded .pl-3;
+}
+
+.textarea:focus {
   outline: none;
 
   @apply .border-secondary-900 .text-primary-900;
