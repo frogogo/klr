@@ -30,7 +30,7 @@ body {
 }
 
 .header-navigation__item:hover {
-  @apply .text-orange-500;
+  @apply .text-secondary;
 }
 
 /* Language selector */
@@ -40,7 +40,7 @@ body {
 }
 
 .language-selector__item.selected {
-  @apply .border .border-orange-500 .rounded-full .text-orange-500;
+  @apply .border-2 .border-secondary .rounded-full .text-secondary;
 }
 
 /* Grid 4 */
@@ -62,15 +62,21 @@ body {
 /* Inputs */
 
 .input {
-  @apply .tracking-wide .py-2 .border-2 .text-gray-500 .rounded .pl-3;
+  @apply .tracking-wide .py-2 .border-2 .text-gray .rounded .pl-3;
 }
 
 .input:focus {
-  @apply .border-orange-400 .text-gray-900;
+  outline: none;
+
+  @apply .border-secondary-900 .text-primary-900;
 }
 
 /* Buttons */
 
 .btn-orange-filled {
-  @apply .uppercase .font-bold .text-white .tracking-wide .py-2 .px-24 .bg-orange-400 .rounded;
+  @apply .uppercase .font-bold .text-white .tracking-wide .py-2 .px-24 .bg-secondary .rounded .transition-300ms;
+}
+
+.btn-orange-filled:hover {
+  @apply .bg-secondary-900;
 }
