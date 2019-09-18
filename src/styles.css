@@ -1,0 +1,44 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css?family=Exo+2:300,400,500,600,700&display=swap');
+
+body {
+  font-family: 'Exo 2', sans-serif;
+}
+
+/* Transitions */
+
+.transition-0 { transition: all 0 }
+.transition-20ms { transition: all .02s }
+.transition-50ms { transition: all .05s }
+.transition-100ms { transition: all .1s }
+.transition-200ms { transition: all .2s }
+.transition-300ms { transition: all .3s }
+
+/* Header navigation */
+
+.header-navigation__item {
+  @apply .text-white .transition-200ms;
+}
+
+.header-navigation__item:not(:last-child) {
+  @apply .mr-6;
+}
+
+.header-navigation__item:hover {
+  @apply .text-orange-500;
+}
+
+/* Language selector */
+
+.language-selector__item {
+  @apply .text-white .p-2;
+}
+
+.language-selector__item.selected {
+  @apply .border .border-orange-500 .rounded-full .text-orange-500;
+}
