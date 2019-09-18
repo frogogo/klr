@@ -62,7 +62,7 @@ body {
 /* Inputs */
 
 .input {
-  @apply .tracking-wide .py-2 .border-2 .text-gray .rounded .pl-3;
+  @apply .tracking-wide .py-2 .border-2 .text-gray-300 .rounded .pl-3;
 }
 
 .input:focus {

@@ -1,5 +1,6 @@
 {
-  "private": true,
+  "name": "klr",
+  "version": "1.0.0",
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack-dev-server",
     "prod": "cross-env NODE_ENV=production webpack --no-progress"
@@ -14,14 +15,9 @@
     "postcss": "^6.0.19",
     "postcss-loader": "^2.1.1",
     "style-loader": "^0.20.3",
-    "tailwindcss": "^1",
+    "tailwindcss": "^1.1.2",
     "webpack": "^4.27.1",
     "webpack-cli": "^3.1.2",
     "webpack-dev-server": "^3.1.1"
-  },
-  "dependencies": {
-    "postcss-flexbugs-fixes": "^4.1.0",
-    "postcss-import": "^12.0.1",
-    "postcss-preset-env": "^6.7.0"
   }
 }
