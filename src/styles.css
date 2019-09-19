@@ -144,3 +144,73 @@ body {
 .btn-orange-filled:hover {
   @apply .bg-primary-700;
 }
+
+/* Flickity */
+
+.flickity-prev-next-button {
+  top: unset;
+  width: 78px;
+  height: 38px;
+  border: 3px solid #f9b000;
+
+  @apply .bottom-0 .rounded .text-sm .font-bold .text-primary-500 .transition-300ms z-10;
+}
+
+.flickity-button:focus {
+  outline: unset;
+
+  @apply .shadow-none;
+}
+
+.flickity-prev-next-button:hover {
+  @apply .bg-primary-500 .text-white;
+}
+
+.flickity-prev-next-button.next {
+  @apply .right-0;
+}
+
+
+.flickity-prev-next-button.previous {
+  @apply .left-0;
+}
+
+.flickity-prev-next-button .flickity-button-icon {
+  @apply .hidden;
+}
+
+.flickity-prev-next-button:before {
+  @apply .flex .items-center .justify-center .h-full;
+}
+
+.flickity-prev-next-button.next:before {
+  content: 'Вперед';
+}
+
+.flickity-prev-next-button.previous:before {
+  content: 'Назад';
+}
+
+.flickity-page-dots {
+  @apply .flex .items-center .justify-center .bottom-0;
+}
+
+@media (min-width: 768px) {
+  .flickity-page-dots {
+    bottom: 1.5rem;
+  }
+}
+
+.flickity-page-dots .dot {
+  width: 6px;
+  height: 6px;
+
+  @apply .opacity-100 .bg-gray-700;
+}
+
+.flickity-page-dots .dot.is-selected {
+  width: 10px;
+  height: 10px;
+
+  @apply .bg-primary-500;
+}
