@@ -6,6 +6,10 @@
 
 @import url('https://fonts.googleapis.com/css?family=Exo+2:300,400,500,600,700&display=swap');
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Exo 2', sans-serif;
 }
@@ -67,7 +71,6 @@ body {
 
 .achievments {
   display: grid;
-  grid-template-columns: 1fr;
   column-gap: .75rem;
   row-gap: 1.5rem;
   grid-template-columns: 1fr;
@@ -75,6 +78,31 @@ body {
 
 @media (min-width: 640px) {
   .achievments {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Brands pack */
+
+.brands-pack {
+  display: grid;
+  column-gap: .25rem;
+  row-gap: .25rem;
+  grid-template-columns: 1fr;
+}
+
+/* Cases */
+
+.case {
+  width: 17.5rem;
+}
+
+.case:not(:last-child) {
+  @apply .mr-6;
+}
+
+@media (min-width: 640px) {
+  .brands-pack {
     grid-template-columns: repeat(2, 1fr);
   }
 }
