@@ -38,7 +38,7 @@ body {
 }
 
 .header-navigation__dark > .header-navigation__item {
-  @apply .text-primary-900;
+  @apply .text-gray-900;
 }
 
 .header-navigation__item:not(:last-child) {
@@ -46,7 +46,7 @@ body {
 }
 
 .header-navigation__item:hover {
-  @apply .text-secondary;
+  @apply .text-primary-500;
 }
 
 /* Language selector */
@@ -56,11 +56,11 @@ body {
 }
 
 .language-selector__dark > .language-selector__item {
-  @apply .text-primary-900;
+  @apply .text-gray-900;
 }
 
 .language-selector__item.selected {
-  @apply .border-2 .border-secondary .rounded-full .text-secondary;
+  @apply .border-2 .border-primary-500 .rounded-full .text-primary-500;
 }
 
 /* Achievments */
@@ -82,29 +82,29 @@ body {
 /* Form elements */
 
 .input {
-  @apply .tracking-wide .py-2 .border-2 .text-gray-300 .rounded .pl-3;
+  @apply .tracking-wide .py-2 .border-2 .text-gray-500 .rounded .pl-3;
 }
 
 .input:focus {
   outline: none;
 
-  @apply .border-secondary-900 .text-primary-900;
+  @apply .border-primary-700 .text-gray-900;
 }
 
 .textarea {
-  @apply .tracking-wide .py-2 .border-2 .text-gray-300 .rounded .pl-3;
+  @apply .tracking-wide .py-2 .border-2 .text-gray-500 .rounded .pl-3;
 }
 
 .textarea:focus {
   outline: none;
 
-  @apply .border-secondary-900 .text-primary-900;
+  @apply .border-primary-700 .text-gray-900;
 }
 
 /* Buttons */
 
 .btn-orange-filled {
-  @apply .uppercase .font-bold .text-white .tracking-wide .py-2 .px-6 .bg-secondary .rounded .transition-300ms;
+  @apply .uppercase .font-bold .text-white .tracking-wide .py-2 .px-6 .bg-primary-500 .rounded .transition-300ms;
 }
 
 @media (min-width: 768px) {
@@ -114,5 +114,5 @@ body {
 }
 
 .btn-orange-filled:hover {
-  @apply .bg-secondary-900;
+  @apply .bg-primary-700;
 }

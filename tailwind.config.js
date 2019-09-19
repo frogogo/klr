@@ -8,20 +8,22 @@ module.exports = {
     colors: {
       transparent: "transparent",
       primary: {
-        default: "#2f2874",
-        900: "#211e3f"
+        500: "#f9b000",
+        700: "#df9e00"
       },
       secondary: {
-        default: "#f9b000",
-        900: "#df9e00"
+        500: "#2f2874"
       },
       gray: {
         100: "#fafafa",
-        200: "#edecef",
-        300: "#c3c2ca",
-        400: "#8d8b9b"
+        300: "#edecef",
+        500: "#c3c2ca",
+        700: "#8d8b9b",
+        900: "#211e3f"
       },
-      black: "#2B2B2B",
+      red: {
+        500: "ff7474"
+      },
       white: "#ffffff"
     }
   }
