@@ -10,32 +10,32 @@
              class="relative bg-no-repeat bg-cover bg-center"
              style="background-image: url(./assets/images/ima-home.png)">
       <div class="container">
-        <div class="flex flex-col justify-between pt-16 pb-10 min-h-screen">
-          <header class="flex justify-between items-center w-full mb-10">
-            <a href="#" class="">
+        <div class="flex flex-col justify-between pt-6 md:pt-16 pb-10 min-h-screen">
+          <header class="flex flex-col md:flex-row md:justify-between md:items-center w-full mb-10 relative">
+            <a href="#" class="mb-6 md:mb-0">
               <img src="assets/images/logo-klr-white.svg" alt="" />
             </a>
-            <nav class="header-navigation">
+            <nav class="header-navigation mb-6 md:mb-0">
               <a href="#" class="header-navigation__item">О компании</a>
               <a href="#" class="header-navigation__item">Клиенты</a>
               <a href="#" class="header-navigation__item">Бренды</a>
               <a href="#" class="header-navigation__item">Портфолио</a>
               <a href="#" class="header-navigation__item">Контакты</a>
             </nav>
-            <div class="language-selector">
+            <div class="language-selector absolute md:static mt-2 md:mt-0 right-0">
               <a href="#" class="mr-3 language-selector__item selected">Ru</a>
               <a href="#" class="language-selector__item">En</a>
             </div>
           </header>
           <div class="text-white mb-10">
-            <h1 class="font-bold text-4xl leading-tight uppercase mb-6 max-w-md">Ключ лояльности в ритейле</h1>
+            <h1 class="heading mb-6 md:max-w-md">Ключ лояльности в ритейле</h1>
             <h2 class="leading-normal font-hairline text-xl max-w-xl">
               KLR — маркетинговая компания, которая дает возможность ритейлерам и АЗС увеличить трафик клиентов, лояльность к бренду, средний чек и прибыль
             </h2>
           </div>
 
           <div class="flex justify-between items-center lg:justify-center relative">
-            <div class="flex flex-col items-center">
+            <div class="hidden md:flex flex-col items-center">
               <span class="mb-2 text-white text-sm font-hairline">Начните прокрутку</span>
               <img src="assets/images/icon-arrow-down.svg" alt="">
             </div>
@@ -50,30 +50,30 @@
 
     <section id="about">
       <div class="container">
-        <header class="flex justify-between items-center mt-16 mb-32 w-full">
-          <a href="#" class="">
+        <header class="flex flex-col md:flex-row md:justify-between md:items-center w-full my-8 md:mt-16 md:mb-32 relative">
+          <a href="#" class="mb-6 md:mb-0">
             <img src="assets/images/logo-klr-color.svg" alt="" />
           </a>
-          <nav class="header-navigation header-navigation__dark">
+          <nav class="header-navigation header-navigation__dark mb-6 md:mb-0">
             <a href="#" class="header-navigation__item">О компании</a>
             <a href="#" class="header-navigation__item">Клиенты</a>
             <a href="#" class="header-navigation__item">Бренды</a>
             <a href="#" class="header-navigation__item">Портфолио</a>
             <a href="#" class="header-navigation__item">Контакты</a>
           </nav>
-          <div class="language-selector language-selector__dark">
+          <div class="language-selector language-selector__dark absolute md:static mt-2 md:mt-0 right-0">
             <a href="#" class="mr-3 language-selector__item selected">Ru</a>
             <a href="#" class="language-selector__item">En</a>
           </div>
         </header>
-        <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-32">
+        <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-10 md:mb-32">
           <div class="mb-6 sm:mb-0">
-            <h2 class="text-primary-900 font-bold text-4xl leading-tight uppercase mb-6">О компании</h2>
+            <h2 class="heading mb-6">О компании</h2>
             <h3 class="text-gray-400 leading-normal font-hairline text-xl max-w-xl">
               Мы разрабатываем и проводим маркетинговые кампании лояльности с положительными результатами для розничного бизнеса и АЗС
             </h3>
           </div>
-          <div class="performance">
+          <div class="achievments">
             <div>
               <p class="text-secondary font-bold text-5xl">1000+</p>
               <p class="uppercase text-primary-900">Проведено успешных акций</p>
@@ -94,14 +94,14 @@
         </div>
       </div>
 
-      <div class="bg-gray-100 py-20">
+      <div class="bg-gray-100 py-10 md:py-20">
         <div class="container">
-          <div class="flex justify-between items-center">
-            <div class="flex items-center sm:mr-32">
-              <img src="assets/images/icon-pdf.svg" class="mr-10" alt="">
+          <div class="flex flex-col md:flex-row md:justify-between text-center md:text-left items-center">
+            <div class="flex flex-col md:flex-row md:items-center md:mr-32">
+              <img src="assets/images/icon-pdf.svg" class="mb-6 md:mb-0 md:mr-10" alt="">
               <div class="">
-                <p class="text-xl font-bold mb-1">Презентация KLR</p>
-                <p class="leading-normal text-gray-400">
+                <p class="text-xl font-bold mb-4 md:mb-1">Презентация KLR</p>
+                <p class="leading-normal text-gray-400 mb-6 md:mb-0">
                   Загрузите презентацию о нашей компании, чтобы получить больше информации, и оставьте свой адрес электронной почты, чтобы получать уведомления о других новостях и обновлениях о KLR и нашей деятельности
                 </p>
               </div>
@@ -119,27 +119,29 @@
 
     <section id="clients" class="bg-primary">
       <div class="container relative">
-        <header class="flex justify-between items-center w-full pt-16 mb-10">
-          <a href="#" class="">
+        <header class="flex flex-col md:flex-row md:justify-between md:items-center w-full pt-16 mb-10 relative">
+          <a href="#" class="mb-6 md:mb-0">
             <img src="assets/images/logo-klr-white.svg" alt="" />
           </a>
-          <nav class="header-navigation">
+          <nav class="header-navigation mb-6 md:mb-0">
             <a href="#" class="header-navigation__item">О компании</a>
             <a href="#" class="header-navigation__item">Клиенты</a>
             <a href="#" class="header-navigation__item">Бренды</a>
             <a href="#" class="header-navigation__item">Портфолио</a>
             <a href="#" class="header-navigation__item">Контакты</a>
           </nav>
-          <div class="language-selector">
+          <div class="language-selector absolute md:static mt-2 md:mt-0 right-0">
             <a href="#" class="mr-3 language-selector__item selected">Ru</a>
             <a href="#" class="language-selector__item">En</a>
           </div>
         </header>
-        <h2 class="mt-20 text-white font-bold text-4xl leading-tight absolute uppercase mb-6 max-w-md">
-          Ритейлеры, с которыми мы работаем
-        </h2>
-        <div class="pb-6">
-          <img src="assets/images/ima-map.png" alt="">
+        <div class="flex flex-col sm:flex-row">
+          <h2 class="heading text-white mt-0 lg:mt-20 mb-6 md:max-w-md">
+            Ритейлеры, с которыми мы работаем
+          </h2>
+          <div class="pb-6">
+            <img src="assets/images/ima-map.png" alt="">
+          </div>
         </div>
       </div>
     </section>
@@ -148,25 +150,25 @@
              class="relative bg-no-repeat bg-cover bg-center"
              style="background-image: url(./assets/images/ima-home.png)">
       <div class="container">
-        <header class="flex justify-between items-center w-full pt-16 pb-24">
-          <a href="#" class="">
+        <header class="flex flex-col md:flex-row md:justify-between md:items-center w-full py-10 md:pt-16 md:pb-24 relative">
+          <a href="#" class="mb-6 md:mb-0">
             <img src="assets/images/logo-klr-white.svg" alt="" />
           </a>
-          <nav class="header-navigation">
+          <nav class="header-navigation mb-6 md:mb-0">
             <a href="#" class="header-navigation__item">О компании</a>
             <a href="#" class="header-navigation__item">Клиенты</a>
             <a href="#" class="header-navigation__item">Бренды</a>
             <a href="#" class="header-navigation__item">Портфолио</a>
             <a href="#" class="header-navigation__item">Контакты</a>
           </nav>
-          <div class="language-selector">
+          <div class="language-selector absolute md:static mt-2 md:mt-0 right-0">
             <a href="#" class="mr-3 language-selector__item selected">Ru</a>
             <a href="#" class="language-selector__item">En</a>
           </div>
         </header>
 
-        <div class="flex justify-between">
-          <div class="mr-24 flex-1 mb-16">
+        <div class="flex flex-col lg:flex-row lg:justify-between">
+          <div class="lg:mr-24 flex-1 mb-8 m:mb-16">
             <p class="mb-4 text-white uppercase font-bold">HEADQUARTERS - EUROPEAN SALES REGION</p>
             <div class="flex items-center mb-3">
               <img src="assets/images/icon-location.svg" class="mr-2" alt="">
@@ -212,8 +214,8 @@
             <p class="text-sm text-gray-300">Copyright © 2019 KLR. Все права защищены.</p>
           </div>
 
-          <div class="bg-white py-10 px-20 flex flex-1">
-            <form class="flex flex-col justify-between" action="#" method="post">
+          <div class="bg-white px-4 py-6 md:py-10 lg:px-20 lg:flex lg:flex-1">
+            <form class="lg:flex lg:flex-col lg:justify-between" action="#" method="post">
               <h4 class="text-2xl font-bold leading-normal mb-5">Хотите связаться с нашими менеджерами?</h4>
               <h5 class="text-gray-300 mb-10">Пожалуйста, заполните контактную форму ниже</h5>
               <input type="text" name="name" value="" placeholder="Имя" class="input w-full mb-3" required>
