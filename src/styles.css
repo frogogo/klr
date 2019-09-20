@@ -231,23 +231,13 @@ body {
 .brands-pack {
   width: 20rem;
   display: grid;
+  row-gap: 0;
+  column-gap: 0;
   grid-template-columns: repeat(2, 1fr);
 }
 
-.brands-pack:not(:last-child) {
-  margin-right: 0.25rem;
-}
-
 .brands-pack .brand {
-  @apply .px-10 .py-5 .border;
-}
-
-.brands-pack .brand:nth-child(-n+2) {
-  @apply .border-t-0;
-}
-
-.brands-pack .brand:nth-child(n+3) {
-  @apply .border-b-0;
+  @apply .px-10 .py-5 ;
 }
 
 .brands-pack img {
