@@ -68,7 +68,7 @@ body {
 /* Language selector */
 
 .language-selector__item {
-  @apply .text-white .p-2;
+  @apply .text-white .p-2 .uppercase .transition-300ms;
 }
 
 .language-selector__dark > .language-selector__item {
@@ -77,6 +77,10 @@ body {
 
 .language-selector__item.selected {
   @apply .border-2 .border-primary-500 .rounded-full .text-primary-500;
+}
+
+.language-selector__item:hover {
+  @apply .text-primary-500
 }
 
 /* Achievments */
