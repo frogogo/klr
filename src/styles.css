@@ -163,9 +163,9 @@ body {
   top: unset;
   width: 78px;
   height: 38px;
-  border: 3px solid #f9b000;
+  border: 2px solid #f9b000;
 
-  @apply .bottom-0 .rounded .text-sm .font-bold .text-primary-500 .transition-300ms z-10;
+  @apply .bottom-0 .rounded .text-sm .font-bold .text-primary-500 .transition-300ms z-10 .bg-transparent;
 }
 
 .flickity-button:focus {
@@ -192,6 +192,10 @@ body {
 
 .flickity-prev-next-button:before {
   @apply .flex .items-center .justify-center .h-full;
+}
+
+.flickity-button:disabled {
+  @apply .border-gray-300 .text-gray-300 .opacity-100;
 }
 
 .flickity-prev-next-button.next:before {
