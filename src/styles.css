@@ -53,7 +53,7 @@ body {
   @apply .text-white .transition-200ms;
 }
 
-.header-navigation__dark > .header-navigation__item {
+.header-dark .header-navigation__item {
   @apply .text-gray-900;
 }
 
@@ -65,13 +65,25 @@ body {
   @apply .text-primary-500;
 }
 
+.header-dark {
+  @apply .bg-white;
+}
+
+.header-dark .logo-white {
+  @apply .hidden;
+}
+
+.header-dark .logo-dark {
+  @apply .block;
+}
+
 /* Language selector */
 
 .language-selector__item {
   @apply .text-white .p-2 .uppercase .transition-300ms;
 }
 
-.language-selector__dark > .language-selector__item {
+.header-dark .language-selector__item {
   @apply .text-gray-900;
 }
 
