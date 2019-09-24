@@ -20,6 +20,13 @@ const mobileMenuClose = () => {
   mobileMenu.classList.add("hidden");
 };
 
+// Smooth scroll for anchors with offset
+SmoothScroll(".smooth-scroll-with-offset", {
+  speed: 500,
+  // How far to offset the scrolling anchor location in pixels
+  offset: header.offsetHeight
+});
+
 mobileMenuOpenTarget.addEventListener("click", () => {
   mobileMenuOpen();
 });
