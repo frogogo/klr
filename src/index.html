@@ -7,28 +7,33 @@
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
   </head>
   <body>
+    <header class="w-full fixed top-0 left-0 z-50 pt-16">
+      <div class="container">
+        <div class="flex flex-col md:flex-row md:justify-between md:items-center ">
+          <a href="#" class="mb-6 md:mb-0">
+            <img src="./assets/images/logo-klr-white.svg" alt="" />
+          </a>
+          <nav class="header-navigation mb-6 md:mb-0">
+            <a href="#about" class="header-navigation__item">О компании</a>
+            <a href="#clients" class="header-navigation__item">Клиенты</a>
+            <a href="#brands" class="header-navigation__item">Бренды</a>
+            <a href="#cases" class="header-navigation__item">Портфолио</a>
+            <a href="#contacts" class="header-navigation__item">Контакты</a>
+          </nav>
+          <div class="language-selector absolute md:static mt-2 md:mt-0 right-0">
+            <a href="#" class="mr-3 language-selector__item selected">Ru</a>
+            <a href="#" class="language-selector__item">En</a>
+          </div>
+        </div>
+        </div>
+    </header>
+
     <section id="main"
              class="relative bg-no-repeat bg-cover bg-center"
              style="background-image: url(./assets/images/ima-home.png)">
       <div class="container">
         <div class="flex flex-col justify-between py-8 md:py-16 min-h-screen">
-          <header class="flex flex-col md:flex-row md:justify-between md:items-center w-full mb-10 relative">
-            <a href="#" class="mb-6 md:mb-0">
-              <img src="./assets/images/logo-klr-white.svg" alt="" />
-            </a>
-            <nav class="header-navigation mb-6 md:mb-0">
-              <a href="#about" class="header-navigation__item">О компании</a>
-              <a href="#clients" class="header-navigation__item">Клиенты</a>
-              <a href="#brands" class="header-navigation__item">Бренды</a>
-              <a href="#cases" class="header-navigation__item">Портфолио</a>
-              <a href="#contacts" class="header-navigation__item">Контакты</a>
-            </nav>
-            <div class="language-selector absolute md:static mt-2 md:mt-0 right-0">
-              <a href="#" class="mr-3 language-selector__item selected">Ru</a>
-              <a href="#" class="language-selector__item">En</a>
-            </div>
-          </header>
-          <div class="text-white mb-10">
+          <div class="text-white mt-40 mb-10">
             <h1 class="heading mb-6 md:max-w-md">Ключ лояльности в ритейле</h1>
             <h2 class="leading-normal font-hairline text-xl max-w-xl">
               KLR — маркетинговая компания, которая дает возможность ритейлерам и АЗС увеличить трафик клиентов, лояльность к бренду, средний чек и прибыль
@@ -50,23 +55,7 @@
     </section>
 
     <section id="about">
-      <div class="container">
-        <header class="flex flex-col md:flex-row md:justify-between md:items-center w-full mb-8 pt-8 py-8 md:pt-16 md:pb-32 relative">
-          <a href="#" class="mb-6 md:mb-0">
-            <img src="./assets/images/logo-klr-color.svg" alt="" />
-          </a>
-          <nav class="header-navigation header-navigation__dark mb-6 md:mb-0">
-            <a href="#about" class="header-navigation__item">О компании</a>
-            <a href="#clients" class="header-navigation__item">Клиенты</a>
-            <a href="#brands" class="header-navigation__item">Бренды</a>
-            <a href="#cases" class="header-navigation__item">Портфолио</a>
-            <a href="#contacts" class="header-navigation__item">Контакты</a>
-          </nav>
-          <div class="language-selector language-selector__dark absolute md:static mt-2 md:mt-0 right-0">
-            <a href="#" class="mr-3 language-selector__item selected">Ru</a>
-            <a href="#" class="language-selector__item">En</a>
-          </div>
-        </header>
+      <div class="container pt-8 md:pt-32">
         <div class="flex flex-col lg:flex-row lg:justify-between lg:items-center mb-10 lg:mb-32">
           <div class="mb-6 lg:mb-0">
             <h2 class="heading text-gray-900 mb-6">О компании</h2>
@@ -96,7 +85,7 @@
       </div>
 
       <div class="bg-gray-100 py-10 md:py-20">
-        <div class="container">
+        <div class="container pt-8 md:pt-32">
           <div class="flex flex-col md:flex-row md:justify-between text-center md:text-left items-center">
             <div class="flex flex-1 flex-col md:flex-row md:items-center md:mr-32">
               <img src="./assets/images/icon-pdf.svg" class="mb-6 md:mb-0 md:mr-10" alt="">
@@ -119,23 +108,7 @@
     </section>
 
     <section id="clients" class="bg-secondary-500">
-      <div class="container relative">
-        <header class="flex flex-col md:flex-row md:justify-between md:items-center w-full py-8 md:py-16 relative">
-          <a href="#" class="mb-6 md:mb-0">
-            <img src="./assets/images/logo-klr-white.svg" alt="" />
-          </a>
-          <nav class="header-navigation mb-6 md:mb-0">
-            <a href="#about" class="header-navigation__item">О компании</a>
-            <a href="#clients" class="header-navigation__item">Клиенты</a>
-            <a href="#brands" class="header-navigation__item">Бренды</a>
-            <a href="#cases" class="header-navigation__item">Портфолио</a>
-            <a href="#contacts" class="header-navigation__item">Контакты</a>
-          </nav>
-          <div class="language-selector absolute md:static mt-2 md:mt-0 right-0">
-            <a href="#" class="mr-3 language-selector__item selected">Ru</a>
-            <a href="#" class="language-selector__item">En</a>
-          </div>
-        </header>
+      <div class="container pt-8 md:pt-32">
         <div class="flex flex-col sm:flex-row">
           <h2 class="heading text-white mt-0 mb-6 md:max-w-md">
             Ритейлеры, с которыми мы работаем
@@ -148,23 +121,7 @@
     </section>
 
     <section id="brands" class="pb-6 bg-gray-100">
-      <div class="container">
-        <header class="flex flex-col md:flex-row md:justify-between md:items-center w-full py-8 md:py-16 relative">
-          <a href="#" class="mb-6 md:mb-0">
-            <img src="./assets/images/logo-klr-color.svg" alt="" />
-          </a>
-          <nav class="header-navigation header-navigation__dark mb-6 md:mb-0">
-            <a href="#about" class="header-navigation__item">О компании</a>
-            <a href="#clients" class="header-navigation__item">Клиенты</a>
-            <a href="#brands" class="header-navigation__item">Бренды</a>
-            <a href="#cases" class="header-navigation__item">Портфолио</a>
-            <a href="#contacts" class="header-navigation__item">Контакты</a>
-          </nav>
-          <div class="language-selector language-selector__dark absolute md:static mt-2 md:mt-0 right-0">
-            <a href="#" class="mr-3 language-selector__item selected">Ru</a>
-            <a href="#" class="language-selector__item">En</a>
-          </div>
-        </header>
+      <div class="container pt-8 md:pt-32">
         <h2 class="heading text-gray-900 mt-0 mb-20 md:max-w-md">
           Бренды, с которыми мы работаем
         </h2>
@@ -231,23 +188,7 @@
     </section>
 
     <section id="cases" class="mb-10">
-      <div class="container">
-        <header class="flex flex-col md:flex-row md:justify-between md:items-center w-full py-8 md:py-16">
-          <a href="#" class="mb-6 md:mb-0">
-            <img src="./assets/images/logo-klr-color.svg" alt="" />
-          </a>
-          <nav class="header-navigation header-navigation__dark mb-6 md:mb-0">
-            <a href="#about" class="header-navigation__item">О компании</a>
-            <a href="#clients" class="header-navigation__item">Клиенты</a>
-            <a href="#brands" class="header-navigation__item">Бренды</a>
-            <a href="#cases" class="header-navigation__item">Портфолио</a>
-            <a href="#contacts" class="header-navigation__item">Контакты</a>
-          </nav>
-          <div class="language-selector language-selector__dark absolute md:static mt-2 md:mt-0 right-0">
-            <a href="#" class="mr-3 language-selector__item selected">Ru</a>
-            <a href="#" class="language-selector__item">En</a>
-          </div>
-        </header>
+      <div class="container pt-8 md:pt-32">
         <h2 class="heading text-gray-900 mt-0 mb-20 md:max-w-md">
           Кейсы
         </h2>
@@ -302,24 +243,7 @@
     <section id="contacts"
              class="relative bg-no-repeat bg-cover bg-center"
              style="background-image: url(./assets/images/ima-home.png)">
-      <div class="container">
-        <header class="flex flex-col md:flex-row md:justify-between md:items-center w-full py-8 md:pt-16 md:pb-24 relative">
-          <a href="#" class="mb-6 md:mb-0">
-            <img src="./assets/images/logo-klr-white.svg" alt="" />
-          </a>
-          <nav class="header-navigation mb-6 md:mb-0">
-            <a href="#about" class="header-navigation__item">О компании</a>
-            <a href="#clients" class="header-navigation__item">Клиенты</a>
-            <a href="#brands" class="header-navigation__item">Бренды</a>
-            <a href="#cases" class="header-navigation__item">Портфолио</a>
-            <a href="#contacts" class="header-navigation__item">Контакты</a>
-          </nav>
-          <div class="language-selector absolute md:static mt-2 md:mt-0 right-0">
-            <a href="#" class="mr-3 language-selector__item selected">Ru</a>
-            <a href="#" class="language-selector__item">En</a>
-          </div>
-        </header>
-
+      <div class="container pt-8 md:pt-32">
         <div class="flex flex-col lg:flex-row lg:justify-between">
           <div class="lg:mr-24 flex-1 mb-8 m:mb-16">
             <p class="mb-4 text-white uppercase font-bold">HEADQUARTERS - EUROPEAN SALES REGION</p>
