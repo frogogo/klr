@@ -237,6 +237,8 @@ body {
 /* Brands pack */
 
 .brands-pack {
+  @apply .h-64;
+
   width: 20rem;
   display: grid;
   row-gap: 0;
