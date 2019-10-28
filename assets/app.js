@@ -38,6 +38,23 @@ const toggleDocumentScroll = action => {
   } else return;
 };
 
+const checkHeader = () => {
+  const width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+  if (width < 768) {
+    header.classList.add("header-white");
+    return
+  }
+
+  const SCROLL_TO_LIMIT = 200;
+  window.scrollY > SCROLL_TO_LIMIT
+    ? header.classList.add("header-white")
+    : header.classList.remove("header-white");
+};
+
+window.addEventListener("scroll", checkHeader);
+window.addEventListener("DOMContentLoaded", checkHeader);
+window.addEventListener("resize", checkHeader);
+
 mobileMenuOpenTarget.addEventListener("click", () => {
   toggleMobileMenu("open");
   toggleDocumentScroll("disable");
