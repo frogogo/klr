@@ -72,6 +72,11 @@ mobileMenuLinks.forEach(link => {
   });
 });
 
+// Smooth scroll for anchors
+SmoothScroll('.smooth-scroll', {
+  speed: 700
+})
+
 // Smooth scroll for anchors with offset
 SmoothScroll(".smooth-scroll-with-offset", {
   speed: 500,
