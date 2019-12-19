@@ -65,3 +65,7 @@ typings/
 
 # Build
 dist
+
+# Bundled js & compiled css
+/src/static/app.bundled.js
+/src/static/app.compiled.css
