@@ -1,13 +1,10 @@
 {
   "name": "klr",
-  "version": "1.3.0",
-  "description": "Official site of KLR",
+  "private": true,
   "scripts": {
     "start": "concurrently \"ELEVENTY_ENV=development eleventy --serve --watch\" \"postcss src/_assets/stylesheets/app.css -o src/static/app.compiled.css -w\" \"webpack --watch --config webpack.config.js\"",
     "build": "del dist && eleventy && purgecss --config ./purgecss.config.js --out src/_includes/stylesheets && ELEVENTY_ENV=production webpack --config webpack.config.js && ELEVENTY_ENV=production eleventy"
   },
-  "author": "klr",
-  "license": "ISC",
   "devDependencies": {
     "@11ty/eleventy": "^0.9.0",
     "@babel/core": "^7.7.2",
