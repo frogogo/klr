@@ -1,0 +1,15 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Theme Color for Chrome, Firefox OS and Opera -->
+<meta name="theme-color" content="{{ site.meta_data.theme_color }}">
+
+<!-- Set the base URL for all relative URLs within the document -->
+<base href="{{ page.url }}">
+
+<meta name="description" content="{% if description %}{{ description }}{% else %}{{ site.description }}{% endif %}">
+
+<title>{% if title %}{{ title }}{% else %}{{ site.title }}{% endif %}</title>
+
+<!-- Google fonts -->
+<link href="https://fonts.googleapis.com/css?family=Exo+2:300,400,500,600,700&display=swap" rel="stylesheet">

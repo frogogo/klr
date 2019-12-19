@@ -1,0 +1,326 @@
+---
+layout: layouts/base.njk
+---
+
+<header id="header" class="w-full sticky md:fixed top-0 left-0 z-50 py-6">
+  <div class="container">
+    <div class="flex justify-between items-center">
+      <a href="#">
+        <img src="/static/images/logo-klr-white.svg" class="logo-white" alt="" />
+        <img src="/static/images/logo-klr-color.svg" class="logo-dark hidden" alt="" />
+      </a>
+      <nav class="header-navigation hidden md:block">
+        <a href="#about" class="smooth-scroll-with-offset header-navigation__item">О компании</a>
+        <a href="#clients" class="smooth-scroll-with-offset header-navigation__item">Клиенты</a>
+        <a href="#brands" class="smooth-scroll-with-offset header-navigation__item">Бренды</a>
+        <!-- <a href="#cases" class="smooth-scroll-with-offset header-navigation__item">Портфолио</a> -->
+        <a href="#contacts" class="smooth-scroll-with-offset header-navigation__item">Контакты</a>
+      </nav>
+      <div class="flex items-center">
+        <!-- <div class="language-selector mr-6 md:mr-0">
+          <a href="#" class="mr-3 language-selector__item selected">Ru</a>
+        </div> -->
+        <div class="hamburger-menu md:hidden">
+          <img src="/static/images/icon-menu.svg" class="menu-open" alt="" />
+          <img src="/static/images/icon-close.svg" class="menu-close hidden" alt="" />
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-navigation hidden flex-col items-center justify-between min-h-screen h-full bg-white fixed w-full z-20 top-0 left-0">
+  <nav class="flex flex-col items-center justify-center mt-40">
+    <a href="#about" class="smooth-scroll-with-offset mobile-menu__link text-2xl text-secondary-900 hover:text-primary-500 mb-5">О компании</a>
+    <a href="#clients" class="smooth-scroll-with-offset mobile-menu__link text-2xl text-secondary-900 hover:text-primary-500 mb-5">Клиенты</a>
+    <a href="#brands" class="smooth-scroll-with-offset mobile-menu__link text-2xl text-secondary-900 hover:text-primary-500 mb-5">Бренды</a>
+    <!-- <a href="#cases" class="smooth-scroll-with-offset mobile-menu__link text-2xl text-secondary-900 hover:text-primary-500 mb-5">Портфолио</a> -->
+    <a href="#contacts" class="smooth-scroll-with-offset mobile-menu__link text-2xl text-secondary-900 hover:text-primary-500">Контакты</a>
+  </nav>
+
+  <!-- <a href="#presentation" class="smooth-scroll-with-offset flex items-center mb-20">
+    <img src="/static/images/images/icon-pdf-mobile.svg" class="mr-4" alt="">
+    <span class="text-sm text-gray-700">Загрузите презентацию</span>
+  </a> -->
+</div>
+
+<section id="main"
+         class="relative bg-no-repeat bg-cover bg-center"
+         style="background-image: url(/static/images/ima-home.png)">
+  <div class="container">
+    <div class="flex flex-col justify-between py-8 md:py-16">
+      <div class="text-white my-10 md:my-40">
+        <h1 class="heading mb-6 md:max-w-md">Ключ лояльности в ритейле</h1>
+        <h2 class="leading-normal font-hairline text-xl max-w-xl">
+          KLR — маркетинговая компания, которая дает возможность ритейлерам и АЗС увеличить трафик клиентов, лояльность к бренду, средний чек и прибыль
+        </h2>
+      </div>
+
+      <div class="flex justify-between items-center lg:justify-center relative">
+        <div class="hidden md:flex flex-col items-center">
+          <span class="mb-2 text-white text-sm font-hairline">Начните прокрутку</span>
+          <img src="/static/images/icon-arrow-down.svg" alt="">
+        </div>
+        <!-- <a href="#presentation" class="smooth-scroll-with-offset flex items-center lg:absolute lg:right-0">
+          <span class="text-white text-sm font-hairline mr-5">Загрузите презентацию</span>
+          <img src="/static/images/icon-pdf-white.svg" alt="">
+        </a> -->
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="container py-8 md:py-16">
+    <div class="flex flex-col lg:flex-row lg:justify-between lg:items-center">
+      <div class="mb-6 lg:mb-0">
+        <h2 class="heading text-gray-900 mb-6">О компании</h2>
+        <h3 class="text-gray-700 leading-normal font-hairline text-xl max-w-xl">
+          Мы разрабатываем и проводим маркетинговые кампании лояльности с положительными результатами для розничного бизнеса и АЗС
+        </h3>
+      </div>
+      <div class="achievments">
+        <div>
+          <p class="text-primary-500 font-bold text-5xl">1000+</p>
+          <p class="uppercase text-gray-900">Проведено успешных акций</p>
+        </div>
+        <div>
+          <p class="text-primary-500 font-bold text-5xl">30+</p>
+          <p class="uppercase text-gray-900">Параллельно проводятся акций</p>
+        </div>
+        <div>
+          <p class="text-primary-500 font-bold text-5xl">15</p>
+          <p class="uppercase text-gray-900">Стран присутствия</p>
+        </div>
+        <div>
+          <p class="text-primary-500 font-bold text-5xl">25</p>
+          <p class="uppercase text-gray-900">Лет на рынке</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- <div class="bg-gray-100 py-10 md:py-20" id="presentation">
+    <div class="container">
+      <div class="flex flex-col md:flex-row md:justify-between text-center md:text-left items-center">
+        <div class="flex flex-1 flex-col md:flex-row md:items-center md:mr-32">
+          <img src="/static/images/icon-pdf.svg" class="mb-6 md:mb-0 md:mr-10" alt="">
+          <div>
+            <p class="text-xl font-bold mb-4 md:mb-1">Презентация KLR</p>
+            <p class="leading-normal text-gray-700 mb-6 md:mb-0">
+              Загрузите презентацию о нашей компании, чтобы получить больше информации, и оставьте свой адрес электронной почты, чтобы получать уведомления о других новостях и обновлениях о KLR и нашей деятельности
+            </p>
+          </div>
+        </div>
+        <div>
+          <form class="" action="#" method="post">
+            <input type="text" name="name" value="" placeholder="Имя" class="input w-full mb-3" required>
+            <input type="email" name="email" value="" placeholder="Почта" class="input w-full mb-3" required>
+            <input type="tel" name="phone" value="" placeholder="Телефон" class="input w-full mb-3" required>
+            <button type="submit" name="button" class="btn-orange-filled w-full">Скачать</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div> -->
+</section>
+
+<section id="clients" class="bg-secondary-500">
+  <div class="container pt-8 md:pt-16">
+    <div class="flex flex-col sm:flex-row">
+      <h2 class="heading text-white mt-0 mb-6 md:max-w-xs">
+        Ритейлеры, с которыми мы работаем
+      </h2>
+      <div class="pb-6">
+        <img src="/static/images/ima-map.png" alt="">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="brands" class="pb-6 bg-gray-100">
+  <div class="container pt-8 md:pt-16">
+    <h2 class="heading text-gray-900 mt-0 mb-20 md:max-w-md">
+      Бренды, с которыми мы работаем
+    </h2>
+
+    <div class="pb-24 flex justify-center flex-wrap lg:flex-no-wrap lg:justify-start">
+      <div class="brands-pack">
+        <div class="brand">
+          <img src="/static/images/brands/baldinini.png" alt="Baldinini">
+        </div>
+        <div class="brand">
+          <img src="/static/images/brands/goodyear.png" alt="Goodyear">
+        </div>
+        <div class="brand">
+          <img src="/static/images/brands/richardson_scheffield.png" alt="Richardson Scheffield">
+        </div>
+        <div class="brand">
+          <img src="/static/images/brands/swiss_oak.png" alt="Swiss Oak">
+        </div>
+      </div>
+      <div class="brands-pack">
+        <div class="brand">
+          <img src="/static/images/brands/sabatier.png" alt="Sabatier">
+        </div>
+        <div class="brand">
+          <img src="/static/images/brands/blaupunkt.png" alt="Blaupunkt">
+        </div>
+        <div class="brand">
+          <img src="/static/images/brands/bormiolli_rocco.png" alt="Bormiolli Rocco">
+        </div>
+        <div class="brand">
+          <img src="/static/images/brands/luminarc.png" alt="Luminarc">
+        </div>
+      </div>
+      <div class="brands-pack">
+        <div class="brand">
+          <img src="/static/images/brands/stanley.png" alt="Stanley">
+        </div>
+        <div class="brand">
+          <img src="/static/images/brands/ducati_corse.png" alt="Ducati Corse">
+        </div>
+        <div class="brand">
+          <img src="/static/images/brands/black_decker.png" alt="Black Decker">
+        </div>
+        <div class="brand">
+          <img src="/static/images/brands/sd.png" alt="Sweet Dreams">
+        </div>
+      </div>
+      <div class="brands-pack">
+        <div class="brand">
+          <img src="/static/images/brands/slazenger.png" alt="Slazenger">
+        </div>
+        <div class="brand">
+          <img src="/static/images/brands/arcuisine.png" alt="Arcuisine">
+        </div>
+        <div class="brand">
+          <img src="/static/images/brands/pyroflam.png" alt="Pyroflam">
+        </div>
+        <div class="brand">
+          <img src="/static/images/brands/corelle.png" alt="Corelle">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- <section id="cases" class="mb-10">
+  <div class="container pt-8 md:pt-16">
+    <h2 class="heading text-gray-900 mt-0 mb-20 md:max-w-md">
+      Кейсы
+    </h2>
+
+    <div class="pb-24" data-flickity='{ "cellAlign": "left", "groupCells": true }'>
+      <div class="case relative border rounded p-6">
+        <p class="uppercase font-semibold text-gray-900 mb-2">Партнер</p>
+        <p class="text-xl font-bold text-gray-900 mb-5">TUS Supermarket Slovenia 200 Outlets</p>
+        <p class="uppercase font-semibold text-gray-900 mb-2">Партнер</p>
+        <img src="/static/images/brand-example.png" class="w-24 mb-4" alt="">
+        <p class="text-gray-700 mb-3">2015 - 2016</p>
+        <p class="text-gray-700 mb-3">Декабрь - Март</p>
+        <p class="text-gray-700">12 + 1 неделя</p>
+
+        <div class="case-details flex flex-col justify-between absolute w-full h-full top-0 left-0 z-50 p-6 bg-white">
+          <img src="/static/images/ima-case-example.png" class="w-48 mx-auto mb-6" alt="">
+          <a href="#" class="btn-orange-filled block">Подробнее</a>
+        </div>
+      </div>
+      <div class="case border rounded p-6">
+        <p class="uppercase font-semibold text-gray-900 mb-2">Партнер</p>
+        <p class="text-xl font-bold text-gray-900 mb-5">TUS Supermarket Slovenia 200 Outlets</p>
+        <p class="uppercase font-semibold text-gray-900 mb-2">Партнер</p>
+        <img src="/static/images/brand-example-1.png" class="w-24 mb-4" alt="">
+        <p class="text-gray-700 mb-3">2015 - 2016</p>
+        <p class="text-gray-700 mb-3">Декабрь - Март</p>
+        <p class="text-gray-700">12 + 1 неделя</p>
+
+        <div class="case-details flex flex-col justify-between absolute w-full h-full top-0 left-0 z-50 p-6 bg-white">
+          <img src="/static/images/ima-case-example.png" class="w-48 mx-auto mb-6" alt="">
+          <a href="#" class="btn-orange-filled block">Подробнее</a>
+        </div>
+      </div>
+      <div class="case border rounded p-6">
+        <p class="uppercase font-semibold text-gray-900 mb-2">Партнер</p>
+        <p class="text-xl font-bold text-gray-900 mb-5">TUS Supermarket Slovenia 200 Outlets</p>
+        <p class="uppercase font-semibold text-gray-900 mb-2">Партнер</p>
+        <img src="/static/images/brand-example.png" class="w-24 mb-4" alt="">
+        <p class="text-gray-700 mb-3">2015 - 2016</p>
+        <p class="text-gray-700 mb-3">Декабрь - Март</p>
+        <p class="text-gray-700">12 + 1 неделя</p>
+
+        <div class="case-details">
+          <img src="/static/images/ima-case-example.png" class="w-48 mx-auto mb-6" alt="">
+          <a href="#" class="btn-orange-filled block">Подробнее</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+<section id="contacts"
+         class="relative bg-no-repeat bg-cover bg-center"
+         style="background-image: url(/static/images/ima-home.png)">
+  <div class="container pt-8 md:pt-16">
+    <div class="flex flex-col lg:flex-row lg:justify-between">
+      <div class="lg:mr-24 flex-1 mb-8 m:mb-16 self-end">
+        <!-- <p class="mb-4 text-white uppercase font-bold">HEADQUARTERS - EUROPEAN SALES REGION</p>
+        <div class="flex items-center mb-3">
+          <img src="/static/images/icon-location.svg" class="mr-2" alt="">
+          <span class="text-gray-500 text-sm">Ankaranska Cesta 7B, Si-6000 Koper/Apodistria, Slovenia</span>
+        </div>
+        <div class="flex items-center mb-3">
+          <img src="/static/images/icon-phone.svg" class="mr-2" alt="">
+          <a href="#" class="text-gray-500 text-sm">+386 5 902 87 58</a>
+        </div>
+        <div class="flex items-center mb-6">
+          <img src="/static/images/icon-mail.svg" class="mr-2" alt="">
+          <a href="#" class="text-gray-500 text-sm">info@klr-europe.com</a>
+        </div>
+
+        <p class="mb-5 text-white uppercase font-bold">REGIONAL SALES HEADQUARTER</p>
+        <p class="text-gray-500 text-xs mb-5 uppercase">Италия</p>
+        <div class="flex items-center mb-3">
+          <img src="/static/images/icon-location.svg" class="mr-2" alt="">
+          <span class="text-gray-500 text-sm">Piazza Cavour, 3, 25038 Rovato, Italy</span>
+        </div>
+        <div class="flex items-center mb-3">
+          <img src="/static/images/icon-phone.svg" class="mr-2" alt="">
+          <a href="#" class="text-gray-500 text-sm">+39 030 770 14 12</a>
+        </div>
+        <div class="flex items-center mb-6">
+          <img src="/static/images/icon-mail.svg" class="mr-2" alt="">
+          <a href="#" class="text-gray-500 text-sm">info@klr-europe.com</a>
+        </div> -->
+
+        <p class="text-gray-500 text-xs mb-5 uppercase">Россия</p>
+        <div class="flex items-center mb-3">
+          <img src="/static/images/icon-location.svg" class="mr-2" alt="">
+          <span class="text-gray-500 text-sm">121357, Москва, ул. Верейская д. 17, БЦ "Верейская Плаза 2" , Офис 415</span>
+        </div>
+        <div class="flex items-center mb-3">
+          <img src="/static/images/icon-phone.svg" class="mr-2" alt="">
+          <a href="#" class="text-gray-500 text-sm">+7 495 644 32 31</a>
+        </div>
+        <div class="flex items-center mb-6">
+          <img src="/static/images/icon-mail.svg" class="mr-2" alt="">
+          <a href="#" class="text-gray-500 text-sm">info@klr-russia.com</a>
+        </div>
+        <hr class="border-b-1 border-gray-700 mb-6">
+        <p class="text-sm text-gray-500">Copyright © 2019 KLR. Все права защищены.</p>
+      </div>
+
+      <!-- <div class="bg-white px-4 py-6 md:py-10 lg:px-20 lg:flex lg:flex-1">
+        <form class="text-center lg:text-left lg:flex lg:flex-col lg:justify-between" action="#" method="post">
+          <h4 class="text-2xl font-bold text-gray-900 leading-normal mb-5">Хотите связаться с нашими менеджерами?</h4>
+          <h5 class="text-gray-500 mb-10">Пожалуйста, заполните контактную форму ниже</h5>
+          <input type="text" name="name" value="" placeholder="Имя" class="input w-full mb-3" required>
+          <input type="email" name="email" value="" placeholder="Почта" class="input w-full mb-3" required>
+          <input type="tel" name="phone" value="" placeholder="Телефон" class="input w-full mb-3" required>
+          <textarea name="message" placeholder="Сообщение" class="textarea w-full mb-6"></textarea>
+          <button type="submit" name="button" class="btn-orange-filled w-full">Отправить сообщение</button>
+        </form>
+      </div> -->
+    </div>
+  </div>
+</section>

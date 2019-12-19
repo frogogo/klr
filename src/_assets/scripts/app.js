@@ -1,3 +1,6 @@
+import SmoothScroll from 'smooth-scroll'
+import Flickity from 'flickity'
+
 "use strict";
 
 const header = document.querySelector("#header");

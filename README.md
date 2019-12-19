@@ -3,23 +3,19 @@
 To get started, clone the project and install the dependencies:
 
 ```
-# Using npm
-npm install
-
-# Using Yarn
 yarn
 ```
 
 After that, start up Webpack Development Server:
 
 ```
-npm run dev
+yarn start
 ```
 
 To build a production bundle run:
 
 ```
-npm run prod
+yarn run build
 ```
 
-After that you will have a ready to deploy bundle at `/dist`
+After that you will have a ready to deploy bundle at `/public`
