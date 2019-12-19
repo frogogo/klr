@@ -18,4 +18,4 @@ To build a production bundle run:
 yarn run build
 ```
 
-After that you will have a ready to deploy bundle at `/public`
+After that you will have a ready to deploy bundle at `/dist`
