@@ -193,3 +193,9 @@ cases.map(element => {
   caseItem.classList.remove('hidden')
   casesCarousel.appendChild(caseItem)
 })
+
+new Flickity( casesCarousel, {
+  // options
+  cellAlign: 'left',
+  groupCells: true
+});
