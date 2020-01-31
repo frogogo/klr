@@ -582,10 +582,6 @@ img {
   border-width: 1px;
 }
 
-.block {
-  display: block;
-}
-
 .flex {
   display: -webkit-box;
   display: flex;
@@ -639,6 +635,10 @@ img {
 
 .font-bold {
   font-weight: 700;
+}
+
+.h-24 {
+  height: 6rem;
 }
 
 .h-full {
@@ -727,8 +727,21 @@ img {
   min-height: 100vh;
 }
 
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.outline-none {
+  outline: 0;
+}
+
 .overflow-hidden {
   overflow: hidden;
+}
+
+.overflow-x-hidden {
+  overflow-x: hidden;
 }
 
 .p-6 {
@@ -858,10 +871,6 @@ img {
 
 .w-24 {
   width: 6rem;
-}
-
-.w-48 {
-  width: 12rem;
 }
 
 .w-full {
@@ -1096,6 +1105,7 @@ body {
   width: 78px;
   height: 38px;
   border: 2px solid #f9b000;
+  position: absolute;
   bottom: 0;
   border-radius: 0.25rem;
   font-size: 0.875rem;
@@ -1161,6 +1171,8 @@ body {
   -webkit-box-pack: center;
           justify-content: center;
   bottom: 0;
+  width: 100%;
+  position: absolute;
 }
 
 @media (min-width: 768px) {
@@ -1174,12 +1186,16 @@ body {
   height: 6px;
   opacity: 1;
   background-color: #8d8b9b;
+  border-radius: 9999px;
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
 }
 
 .flickity-page-dots .dot.is-selected {
   width: 10px;
   height: 10px;
   background-color: #f9b000;
+  border-radius: 9999px;
 }
 
 /* Brands pack */

@@ -123,7 +123,7 @@ const cases = [
   },
   {
     name: 'Мираторг',
-    logotypesSrc: ['/static/images/cases/Miratorg/logo1.png','/static/images/cases/Miratorg/logo2.gif'],
+    logotypesSrc: ['/static/images/cases/Miratorg/logo1.png','/static/images/cases/Miratorg/logo2.png'],
     previewSrc: '/static/images/cases/Miratorg/preview.jpg',
     durationYears: '2016',
     durationMonths: 'Апрель - Июль',
