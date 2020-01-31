@@ -138,14 +138,6 @@ const cases = [
     durationTime: '11 + 4 недели'
   },
   {
-    name: 'СПАР',
-    logotypesSrc: ['/static/images/cases/SPAR/logo.png'],
-    previewSrc: '/static/images/cases/SPAR/preview.jpg',
-    durationYears: '2018-2019',
-    durationMonths: 'Ноябрь - Февраль',
-    durationTime: '13 + 6 недель'
-  },
-  {
     name: 'Сеть АЗС Газпромнефть',
     logotypesSrc: ['/static/images/cases/Gazpromneft_2/logo1.png','/static/images/cases/Gazpromneft_2/logo2.png'],
     previewSrc: '/static/images/cases/Gazpromneft_2/preview.jpg',
