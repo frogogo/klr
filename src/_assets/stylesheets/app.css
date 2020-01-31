@@ -181,7 +181,7 @@ body {
   height: 38px;
   border: 2px solid #f9b000;
 
-  @apply .bottom-0 .rounded .text-sm .font-bold .text-primary-500 .transition-300ms z-10 .bg-transparent;
+  @apply .absolute .bottom-0 .rounded .text-sm .font-bold .text-primary-500 .transition-300ms z-10 .bg-transparent;
 }
 
 .flickity-button:focus {
@@ -223,7 +223,7 @@ body {
 }
 
 .flickity-page-dots {
-  @apply .flex .items-center .justify-center .bottom-0;
+  @apply .flex .items-center .justify-center .bottom-0 .w-full .absolute;
 }
 
 @media (min-width: 768px) {
@@ -236,14 +236,14 @@ body {
   width: 6px;
   height: 6px;
 
-  @apply .opacity-100 .bg-gray-700;
+  @apply .opacity-100 .bg-gray-700 .rounded-full .mx-1;
 }
 
 .flickity-page-dots .dot.is-selected {
   width: 10px;
   height: 10px;
 
-  @apply .bg-primary-500;
+  @apply .bg-primary-500 .rounded-full;
 }
 
 /* Brands pack */
@@ -259,7 +259,7 @@ body {
 }
 
 .brands-pack .brand {
-  @apply .px-10 .py-5 ;
+  @apply .px-10 .py-5;
 }
 
 .brands-pack img {
